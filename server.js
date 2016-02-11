@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 'use strict'
 //express server
 var express = require('express');
@@ -11,9 +10,12 @@ app.all('/*', function (req, res){
     <!DOCTYPE html>\
     <html>\
         <head>\
-           <title> MEAN TODO APP</title>\
+           <title> MEAN TODO APP </title>\
+           <base href="/">\
+        </head>\
         <body>\
-          <h1>Hello</h1>\
+          <div ui-view></div>\
+          <script src="bundle.js"></script>\
         </body>\
     </html>\
            ');

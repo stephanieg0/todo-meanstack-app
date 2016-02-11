@@ -4,6 +4,8 @@
   "description": "app exercise with angular, bootstrap, express and mongodb",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:./src node server",
+    "dev": "npm start & webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,11 +31,19 @@
   },
   "homepage": "https://github.com/stephanieg0/todo-meanstack-app#readme",
   "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
     "express": "^4.13.4"
   },
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "babel-loader": "^6.2.2",
     "babel-preset-es2015": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.4.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   }
